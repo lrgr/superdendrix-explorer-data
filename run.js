@@ -33,6 +33,8 @@ datasets.forEach(({
 });
 
 // Write out a manifest for all the datasets
+if (!fs.existsSync(outputDirectory)) fs.mkdirSync(outputDirectory, { recursive: true });
+
 const manifestFile = `${outputDirectory}/manifest.json`;
 const manifest = {
   datasets: datasets.map((d) => d.name),

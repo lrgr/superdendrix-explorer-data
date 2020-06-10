@@ -1,4 +1,4 @@
-outputDirectory: /Users/mdml/GitHub/superdendrix-explorer/public/data
+outputDirectory: ./output
 datasets:
   - name: 19Q1
     alterationsFileURL: https://www.dropbox.com/s/897qkrtcgfofoyk/depmap_19Q1_mutation_calls_oncoKB.tsv?dl=1
