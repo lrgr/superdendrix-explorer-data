@@ -31,7 +31,7 @@ axios.get(inputFileURL)
       FDR,
     }) => ({
       profile: Profile,
-      alterations: Alterations.split(','),
+      alterations: Alterations.split(' '),
       weight: parseFloat(Weight),
       fdr: parseFloat(FDR),
     }));
