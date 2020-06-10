@@ -3,6 +3,7 @@ node_js:
   - 14
 deploy:
   provider: pages
+  cleanup: true
   github_token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   keep_history: true
   local_dir: output/
