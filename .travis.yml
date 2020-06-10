@@ -3,10 +3,9 @@ node_js:
   - 14
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-  keep-history: true
-  local-dir: output/
+  github_token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  keep_history: true
+  local_dir: output/
   fqdn: superdendrix-explorer-data.lrgr.io
   on:
     branch: master
