@@ -5,3 +5,4 @@ datasets:
     samplesFileURL: https://www.dropbox.com/s/shtza7xyuji8s31/Q1_CERES_celllines.csv?dl=1
     dependenciesFileURL: https://www.dropbox.com/s/eesxw6h5l6lbfkz/gmm_20capped.tsv?dl=1
     twoComponentProfilesFileURL: https://www.dropbox.com/s/20aepmz387b5nst/list_of_2C_profiles.tsv?dl=1
+    superDendrixResultsURL: https://www.dropbox.com/s/cu30ugmxfa0wz2u/depmap_19Q1_superdendrix_results.tsv?dl=1

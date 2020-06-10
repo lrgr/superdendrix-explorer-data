@@ -17,18 +17,24 @@ datasets.forEach(({
   samplesFileURL,
   dependenciesFileURL,
   twoComponentProfilesFileURL,
+  superDendrixResultsURL,
 }) => {
   // Alterations
   const alterationsCommand = `node src/processAlterations.js "${alterationsFileURL}" ${outputDirectory} ${name}`;
-  exec(alterationsCommand);
+  // exec(alterationsCommand);
 
   // Samples
   const samplesCommand = `node src/processSamples.js "${samplesFileURL}" ${outputDirectory} ${name}`;
-  exec(samplesCommand);
+  // exec(samplesCommand);
 
   // Dependencies
   const dependenciesCommand = `node src/processDependencyScores.js "${dependenciesFileURL}" "${twoComponentProfilesFileURL}" ${outputDirectory} ${name}`;
-  exec(dependenciesCommand);
+  // exec(dependenciesCommand);
+
+  // SuperDendrix results
+  const superDendrixResultsCommand = `node src/processSuperDendrixResults.js "${superDendrixResultsURL}" ${outputDirectory} ${name}`;
+  // exec(superDendrixResultsCommand);
+  console.log(superDendrixResultsCommand)
 
 });
 
