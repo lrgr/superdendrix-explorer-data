@@ -6,3 +6,8 @@ datasets:
     dependenciesFileURL: https://www.dropbox.com/s/eesxw6h5l6lbfkz/gmm_20capped.tsv?dl=1
     twoComponentProfilesFileURL: https://www.dropbox.com/s/20aepmz387b5nst/list_of_2C_profiles.tsv?dl=1
     superDendrixResultsURL: https://www.dropbox.com/s/cu30ugmxfa0wz2u/depmap_19Q1_superdendrix_results.tsv?dl=1
+  - name: 20Q2
+    alterationsFileURL: https://ndownloader.figshare.com/files/23082719
+    samplesFileURL: https://ndownloader.figshare.com/files/23083973
+    dependenciesFileURL: https://ndownloader.figshare.com/files/23083994
+    twoComponentProfilesFileURL: https://ndownloader.figshare.com/files/23083967
