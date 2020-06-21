@@ -49,7 +49,7 @@ axios.get(twoComponentProfilesFileURL)
 
         // Process the scores file
         const lines = scoresResponse.data.split('\n');
-        const header = lines.shift().split('\t').slice(1);
+        const header = lines.shift().split('\t').slice(1).map((x) => x.split(' ')[0]);
         const profileToScores = {};
         header.forEach((profile) => {
           profileToScores[profile] = {};
