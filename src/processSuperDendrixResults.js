@@ -30,7 +30,7 @@ axios.get(inputFileURL)
       FDR,
     }) => ({
       profile: profile.split('_')[0],
-      alterations: features.split(', '),
+      alterations: features.split(', ').map((gene) => gene.split('_MUT')[0]),
       weight: parseFloat(Weight),
       fdr: parseFloat(FDR),
     })).filter((set) => set.fdr < 0.2);
