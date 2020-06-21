@@ -13,6 +13,7 @@ const {
 // Go through each dataset and execute the pipeline
 datasets.forEach(({
   name,
+  sampleID,
   alterationsFileURL,
   samplesFileURL,
   dependenciesFileURL,
@@ -24,7 +25,7 @@ datasets.forEach(({
   exec(alterationsCommand);
 
   // Samples
-  const samplesCommand = `node src/processSamples.js "${samplesFileURL}" ${outputDirectory} ${name}`;
+  const samplesCommand = `node src/processSamples.js "${samplesFileURL}" ${sampleID} ${outputDirectory} ${name}`;
   exec(samplesCommand);
 
   // Dependencies

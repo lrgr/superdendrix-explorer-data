@@ -1,12 +1,14 @@
 outputDirectory: ./output
 datasets:
   - name: 19Q1
+    sampleID: CCLE_name
     alterationsFileURL: https://www.dropbox.com/s/897qkrtcgfofoyk/depmap_19Q1_mutation_calls_oncoKB.tsv?dl=1
     samplesFileURL: https://www.dropbox.com/s/shtza7xyuji8s31/Q1_CERES_celllines.csv?dl=1
     dependenciesFileURL: https://www.dropbox.com/s/eesxw6h5l6lbfkz/gmm_20capped.tsv?dl=1
     twoComponentProfilesFileURL: https://www.dropbox.com/s/20aepmz387b5nst/list_of_2C_profiles.tsv?dl=1
     superDendrixResultsURL: https://www.dropbox.com/s/cu30ugmxfa0wz2u/depmap_19Q1_superdendrix_results.tsv?dl=1
   - name: 20Q2
+    sampleID: DepMap_ID
     alterationsFileURL: https://ndownloader.figshare.com/files/23151146?private_link=e017dbb67bf3a06f3657
     samplesFileURL: https://ndownloader.figshare.com/files/23083973?private_link=77b31d9eb38d6088506c
     dependenciesFileURL: https://ndownloader.figshare.com/files/23083994?private_link=b57a7241fdbbff36da61

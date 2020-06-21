@@ -7,11 +7,11 @@ const axios = require("axios");
 // Process command line arguments
 const args = process.argv;
 if (args.length < 5){
-  console.error('Requires three arguments: input file URL, output directory, and prefix.')
+  console.error('Requires four arguments: input file URL, sampleID, output directory, and prefix.')
   process.exit(1);
 }
 
-const [inputFileURL, outputDirectory, prefix] = args.slice(2);
+const [inputFileURL, sampleID, outputDirectory, prefix] = args.slice(2);
 
 // Download the input file
 axios.get(inputFileURL)
@@ -26,13 +26,9 @@ axios.get(inputFileURL)
 
     const sampleToTissue = {};
     const sampleToAlterationCount = {};
-    parsedLines.forEach(({
-      CCLE_name,
-      primary_tissue,
-      alteration_count,
-    }) => {
-      sampleToTissue[CCLE_name] = primary_tissue;
-      sampleToAlterationCount[CCLE_name] = parseInt(alteration_count);
+    parsedLines.forEach((d) => {
+      sampleToTissue[d[sampleID]] = d.primary_tissue;
+      sampleToAlterationCount[d[sampleID]] = parseInt(d.alteration_count);
     });
 
     // Output a manifest to file
@@ -42,6 +38,7 @@ axios.get(inputFileURL)
     const manifestFile = `${outputPrefix}/samples.json`
     const manifest = {
       inputFileURL,
+      sampleID,
       outputDirectory,
       sampleToTissue,
       sampleToAlterationCount,
