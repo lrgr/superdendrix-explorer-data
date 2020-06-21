@@ -28,7 +28,7 @@ axios.get(inputFileURL)
     const sampleToAlterationCount = {};
     parsedLines.forEach((d) => {
       sampleToTissue[d[sampleID]] = d.primary_tissue;
-      sampleToAlterationCount[d[sampleID]] = parseInt(d.alteration_count);
+      sampleToAlterationCount[d[sampleID]] = parseInt(d.numAlterations);
     });
 
     // Output a manifest to file
