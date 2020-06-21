@@ -39,6 +39,7 @@ axios.get(twoComponentProfilesFileURL)
           TwoCscore_at_6sigma,
           direction,
         }) => {
+          gene = gene.split(' ')[0];
           profileToThresholdScore[gene] = parseFloat(TwoCscore_at_6sigma);
           profileToDirection[gene] = direction;
         });

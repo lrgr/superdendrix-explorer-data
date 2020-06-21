@@ -23,15 +23,14 @@ axios.get(inputFileURL)
 
     // Process the input file
     const parsedLines = d3DSV.csvParse(response.data);
-    console.log(parsedLines[0])
     const sets = parsedLines.map(({
-      Profile,
-      Alterations,
+      profile,
+      features,
       Weight,
       FDR,
     }) => ({
-      profile: Profile,
-      alterations: Alterations.split(' '),
+      profile: profile.split('_')[0],
+      alterations: features.split(', '),
       weight: parseFloat(Weight),
       fdr: parseFloat(FDR),
     }));
