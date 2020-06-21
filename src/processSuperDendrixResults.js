@@ -33,7 +33,7 @@ axios.get(inputFileURL)
       alterations: features.split(', '),
       weight: parseFloat(Weight),
       fdr: parseFloat(FDR),
-    }));
+    })).filter((set) => set.fdr < 0.2);
 
     // Output a manifest to file
     const outputPrefix = path.join(outputDirectory, prefix);
