@@ -9,8 +9,8 @@ datasets:
     superDendrixResultsURL: https://www.dropbox.com/s/cu30ugmxfa0wz2u/depmap_19Q1_superdendrix_results.tsv?dl=1
   - name: 20Q2
     sampleID: DepMap_ID
-    alterationsFileURL: https://ndownloader.figshare.com/files/23151146?private_link=e017dbb67bf3a06f3657
-    samplesFileURL: https://ndownloader.figshare.com/files/23083973?private_link=77b31d9eb38d6088506c
-    dependenciesFileURL: https://ndownloader.figshare.com/files/23083994?private_link=b57a7241fdbbff36da61
-    twoComponentProfilesFileURL: https://ndownloader.figshare.com/files/23084507?private_link=6e54bba02e8114eee834
-    superDendrixResultsURL: https://ndownloader.figshare.com/files/23151134?private_link=fb11d1895e82fa967080
+    alterationsFileURL: https://ndownloader.figshare.com/files/28903323
+    samplesFileURL: https://ndownloader.figshare.com/files/28903347
+    dependenciesFileURL: https://ndownloader.figshare.com/files/28903344
+    twoComponentProfilesFileURL: https://ndownloader.figshare.com/files/28903338
+    superDendrixResultsURL: https://ndownloader.figshare.com/files/28903341
